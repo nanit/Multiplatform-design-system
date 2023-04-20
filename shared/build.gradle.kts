@@ -33,13 +33,17 @@ kotlin {
                 implementation(compose.material)
                 @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
                 implementation(compose.components.resources)
+
+                implementation("io.github.aakira:napier:2.6.1")
+                implementation("nanit.mobile.infra:core-arch:1.0.2")
+                implementation("nanit.mobile.infra:core-network:1.0.2")
             }
         }
         val androidMain by getting {
             dependencies {
-                api("androidx.activity:activity-compose:1.6.1")
+                api("androidx.activity:activity-compose:1.7.0")
                 api("androidx.appcompat:appcompat:1.6.1")
-                api("androidx.core:core-ktx:1.9.0")
+                api("androidx.core:core-ktx:1.10.0")
             }
         }
         val iosX64Main by getting
